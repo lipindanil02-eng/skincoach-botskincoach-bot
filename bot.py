@@ -383,7 +383,7 @@ finally:
 cap=(upd.message.caption or "").strip()
 u["photo_b64"]=b64[:100]
 # store ref only
- result_type,result=await pipeline_photo(b64,cap,u)
+    result_type,result=await pipeline_photo(b64,cap,u)
 
     try: await st.delete()
     except: pass
